@@ -6,31 +6,31 @@
 #include<stdio.h>
 int main()
 {
-int n=5, c=1, k=1, i=0;
+int n=5, a=1, b=1, i=0;
 	loop:
 		if(n%2!=0){
-			k=1;
-		a:
-			printf("%d \t",c);
-			c++;
-			k++;
+			b=1;
+		x:
+			printf("%d \t",a);
+			a++;
+			b++;
 			if(k<=n)
-		goto a;
+		goto x;
 	}
 	else{
-		int d = c;
+		int d = a;
 		i = d+n-1;
-		b:	
+		y:	
 			printf("%d \t", i);	
-			c++;
+			a++;
 		i--;
 		if(i>=d)
-		goto b;
+		goto y;
 	}
 	printf("\n");
 	n--;
 	if(n>=1)
 		goto loop;
 }
-		
+	
 	
